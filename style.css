@@ -99,15 +99,14 @@ header {
   min-height: 100vh;
   width: 100%;
 }
-.bglogo{
-  width: 100vw;
-  height: 100vh;
+/*.bglogo{
+  min-height: 100vh;
   background: url(images/logo.png) no-repeat center fixed;
 animation: appearol 3s ease normal, blurbg-animation 10s ease normal;
 
 filter: blur(8px);
 
-}
+}*/
 
 .overlay {
   position: absolute;
@@ -169,11 +168,16 @@ filter: blur(8px);
 
  
 }
-/*.container.active .logoplace {
+.container.active .logoplace {
   animation: logo-animation 1.5s ease-in-out;
   cursor: pointer;
-  transform:translateX(62vw) translateY(35vh) scale(3.9);
-}*/
+  position:fixed;
+  top:50%;
+  left:50%;
+  margin-top: -75px;
+  margin-left: -50px;
+  
+}
 @keyframes blur-animation {
   from{
     filter: none;
@@ -209,7 +213,11 @@ filter: blur(8px);
   transform: translateX(68vw) rotateY(20deg) translateZ(310px) scale(1.9);
 }
   100% {
-    transform:translateX(62vw) translateY(35vh) scale(3.9);
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-top: -75px;
+  margin-left: -50px;
   }
 }
 ul {
