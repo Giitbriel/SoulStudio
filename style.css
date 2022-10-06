@@ -169,11 +169,11 @@ filter: blur(8px);
 
  
 }
-.container.active .logoplace {
+/*.container.active .logoplace {
   animation: logo-animation 1.5s ease-in-out;
   cursor: pointer;
   transform:translateX(62vw) translateY(35vh) scale(3.9);
-}
+}*/
 @keyframes blur-animation {
   from{
     filter: none;
@@ -228,7 +228,9 @@ ul {
   align-items: center;
   
 }
-
+.container.active .overlay, .container.active .shadow.one, .container.active .shadow.two{
+opacity:0;
+}
 
 
 .links a {
